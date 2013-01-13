@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <link rel="stylesheet" href="conway.css">
+  </head>
+  <body>
+    <h1></h1>
+  <canvas id="canvas" width="600" height="400" class="center"></canvas>
+  <div><button id="start_anim" >Start Animation</button></div>
+            <div><button id="stop_anim" >Stop Animation</button></div>
+  <div><button id="seed" >Randomly Seed </button></div>
+  Initial Population Density <div>{{density}}%:</div>
+   <input id="densityslider"  type="range" max="100" value="50"/>
+   <div>Grid Size:
+      <input id="cellslider"  type="range" max="100" value="50"/></div>
+         <div>Scaling:
+      <input id="scaleslider"  type="range" max="10" value="4"/></div>
+               <div>Box Size:
+      <input id="boxsizeslider"  type="range" max="10" value="4"/></div>
+      <div id="notes"></div>
+    <script type="application/dart" src="conway.dart"></script>
+    <script src="https://dart.googlecode.com/svn/branches/bleeding_edge/dart/client/dart.js"></script>
+  </body>
+</html>
